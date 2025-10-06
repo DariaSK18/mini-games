@@ -1,0 +1,41 @@
+/* header styles */
+@import url(./variables.css);
+.header {
+    background: var(--primary-color);
+
+    .header__container {
+        padding: 0 1rem;
+        /* color: var(--text-color); */
+    }
+    .form-control{
+        background: inherit;
+        color: var(--text-color);
+    }
+}
+.navbar-brand {
+    text-shadow: 0.1rem 0.1rem 0.1rem var(--neon-color);
+    .logo{
+    max-width: 2.5rem;
+}
+}
+.navbar-toggler-icon {
+
+}
+/* button {
+    border: 0.1rem solid var(--text-color);
+} */
+.btn-outline {
+  border: 0.1rem solid var(--text-color) !important;
+  transition: all 0.3s ease-in-out;
+}
+.btn-outline:hover {
+  background: var(--secondary-color) !important;
+  /* box-shadow: 0 0 10px var(--neon-color); */
+}
+
+.btn, .navbar-brand, input::placeholder, .navbar-toggler-icon, span {
+    color: var(--text-color) !important;
+}
+/* nav {
+    color: var(--shade-color) !important;
+} */

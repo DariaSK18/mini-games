@@ -1,0 +1,39 @@
+/* ----- reset file ----- */
+@import url(./reset.css);
+
+/* ----- fonts styles ----- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* ----- variables and mixins styles ----- */
+@import url(./variables.css);
+
+/* ----- header styles ----- */
+@import url(./header.css);
+
+/* ----- footer styles ----- */
+@import url(./footer.css);
+
+/* ----- main styles ----- */
+
+body {
+    font-family: "Nunito", "Roboto";
+    font-size: 1rem;
+    /* background: var(--bs-primary);
+    color: var(--text-color); */
+}
+[class*="__container"] {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    .main {
+        flex-grow: 1;
+    }
+    .footer {
+        flex: 0 1 auto;
+    }
+}

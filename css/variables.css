@@ -15,5 +15,6 @@
     --secondary-color: #004d15;
     --text-color: #f9fffb;
     --neon-color: #00ff7b;
-    --shadow-color: #34ff95;
+    --shadow-color: #34ff9625;
+    /* --shadow-color: rgba(62, 62, 62, 0.5); */
 }

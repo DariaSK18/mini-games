@@ -2,7 +2,9 @@
 @import url(./variables.css);
 .header {
     background: var(--primary-color);
-
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0.125rem 0.625rem var(--shadow-color);
     .header__container {
         padding: 0 1rem;
     }

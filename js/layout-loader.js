@@ -7,11 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
       fetch(filePath)
         .then((res) => res.text())
         .then((data) => {
-        //   console.log(data);
-          container.innerHTML = data
+          //   console.log(data);
+          container.innerHTML = data;
+          // const links = document.querySelectorAll(".nav-link");
+          // // console.log(links);
+          // links.forEach((link) => {
+          //   // console.log(link);
+          //   link.addEventListener('click', () => {
+          //     if (link.classList.contains("active")) {
+          //     link.classList.remove("active");
+          //   }
+          //   else {
+          //     link.classList.add("active");
+          //   }
+          //   })
+            
+          // });
         })
-        .catch(err => console.error(`Error loading ${filePath}`, err))
-    //   console.log(filePath);
+        .catch((err) => console.error(`Error loading ${filePath}`, err));
+      //   console.log(filePath);
     }
   };
 

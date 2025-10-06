@@ -4,6 +4,15 @@
 .footer {
     background: var(--primary-color);
     color: var(--text-color);
+
+    box-shadow: 0 -0.125rem 0.625rem var(--shadow-color);
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
     .footer__container {
         width: 100%;
         display: flex;
@@ -18,7 +27,6 @@
     }
 }
 .nav {
-    
 }
 .nav-pills {
     /* align-items: center; */
@@ -30,7 +38,8 @@
 .active {
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
     color: var(--bs-nav-pills-link-active-color);
     background-color: var(--secondary-color) !important;
 }

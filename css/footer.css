@@ -2,12 +2,13 @@
 @import url(./variables.css);
 
 .footer {
-    /* background: rgb(121, 218, 121); */
+    background: var(--primary-color);
+    color: var(--text-color);
     .footer__container {
-
         width: 100%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .footer__language {
     }
@@ -17,12 +18,19 @@
     }
 }
 .nav {
+    
 }
 .nav-pills {
+    /* align-items: center; */
 }
 .nav-item {
 }
 .nav-link {
 }
 .active {
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--secondary-color) !important;
 }

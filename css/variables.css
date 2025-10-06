@@ -9,6 +9,7 @@
   --bs-dark: #031507;
   --bs-body-bg: var(--bs-dark);
   --bs-body-color: #f9fffb;
+  /* --bs-nav-pills-link-active-bg: var(--secondary-color); */
 
    --primary-color: #031507;
     --secondary-color: #004d15;

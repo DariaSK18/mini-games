@@ -8,6 +8,7 @@
     box-shadow: 0 -0.125rem 0.625rem var(--shadow-color);
 
     position: fixed;
+    z-index: 1000;
     bottom: 0;
     left: 0;
     width: 100%;

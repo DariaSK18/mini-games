@@ -25,12 +25,42 @@
 //         tab.classList.add('active');
 //     })
 // })
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-// })
+  const box = document.querySelector('.color-sort__box')
+  const draggableList = document.querySelectorAll('.draggable')
+  // console.log(draggableList);
+  const boxWidth = box.clientWidth
+  const boxHeight = box.clientHeight
+  
+  draggableList.forEach(e => {
+    const elWidth = e.offsetWidth
+    const elHeight = e.offsetHeight
+
+    const randomTop = Math.random() * (boxHeight - elHeight)
+    const randomLeft = Math.random() * (boxWidth - elWidth)
+
+    // console.log(randomTop, randomLeft);
+    
+
+    e.style.top = `${randomTop}px`
+    e.style.left = `${randomLeft}px`
+  })
+})
+
+
 
 $(document).ready(function () {
 $( function() {
     $( "#sortable" ).sortable();
-  } )
+    $( ".draggable" ).draggable();
+    $( ".droppable" ).droppable({
+      drop: function( event, ui ) {
+        $( this )
+          // .addClass( "ui-state-highlight" )
+          // .find( "p" )
+          //   .html( "Dropped!" );
+      }
+    });
+  } );
 })

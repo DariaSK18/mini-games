@@ -44,7 +44,7 @@ body {
 
 /* ---- word game ---- */
 
-.word-game {
+.word-game, .color-sort {
     text-align: center;
     h1 {
         margin: 2rem 0;
@@ -53,7 +53,6 @@ body {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-        
     }
 }
 .box {
@@ -63,7 +62,8 @@ body {
         justify-content: center;
         align-items: center;
     }
-    .box__hint, .box__btn {
+    .box__hint,
+    .box__btn {
         padding: 1rem;
         border: 0.1rem solid var(--secondary-color);
     }
@@ -75,5 +75,65 @@ body {
         border: 0.1rem solid var(--neon-color);
     }
 }
-.ui-state-default {
+
+/* ---- sort colors ---- */
+
+.color-sort {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .color-sort__box {
+        position: relative;
+        /* z-index: 4; */
+        width: 100%;
+        height: 20rem;
+        border: 1px solid white;
+        .draggable{
+            position: absolute;
+        }
+    }
+}
+.box {
+    .box__red,
+    .box__blue,
+    .box__yellow {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+    }
+    .box__red {
+        background: red;
+    }
+    .box__blue {
+        background: blue;
+    }
+    .box__yellow {
+        background: yellow;
+    }
+}
+.droppable__box {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.blue-basket {
+    width: 8rem;
+    height: 10rem;
+    background: rgb(134, 134, 217);
+    border-top: 0.5rem solid blue;
+    border-radius: 0 0 3rem 3rem;
+}
+.yellow-basket {
+    width: 8rem;
+    height: 10rem;
+    background: rgb(234, 234, 149);
+    border-top: 0.5rem solid yellow;
+    border-radius: 0 0 3rem 3rem;
+}
+.red-basket {
+    width: 8rem;
+    height: 10rem;
+    background: rgb(235, 160, 160);
+    border-top: 0.5rem solid red;
+    border-radius: 0 0 3rem 3rem;
 }

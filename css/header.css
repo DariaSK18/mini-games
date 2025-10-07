@@ -3,6 +3,7 @@
 .header {
     background: var(--primary-color);
     position: fixed;
+    z-index: 1000;
     width: 100%;
     box-shadow: 0 0.125rem 0.625rem var(--shadow-color);
     .header__container {

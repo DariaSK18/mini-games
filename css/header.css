@@ -36,6 +36,7 @@
 .offcanvas {
     background: var(--primary-color) !important;
     color: var(--text-color) !important;
+    border-right: 0.01rem solid var(--neon-color) !important;
 }
 .offcanvas-start {
 }

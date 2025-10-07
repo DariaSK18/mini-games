@@ -2,7 +2,7 @@
 @import url(./reset.css);
 
 /* ----- fonts styles ----- */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 /* ----- variables and mixins styles ----- */
 @import url(./variables.css);
@@ -18,8 +18,7 @@
 body {
     font-family: "Nunito", "Roboto";
     font-size: 1rem;
-    /* background: var(--bs-primary);
-    color: var(--text-color); */
+    /* background: var(--bs-primary);*/
     /* position: relative; */
 }
 [class*="__container"] {
@@ -33,7 +32,7 @@ body {
     min-height: 100vh;
     background: var(--primary-color);
     color: var(--text-color);
-    
+
     .main {
         flex-grow: 1;
         padding: 4rem 1rem;
@@ -41,4 +40,40 @@ body {
     .footer {
         flex: 0 1 auto;
     }
+}
+
+/* ---- word game ---- */
+
+.word-game {
+    text-align: center;
+    h1 {
+        margin: 2rem 0;
+    }
+    .word-game__box {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+    }
+}
+.box {
+    .box__word {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .box__hint, .box__btn {
+        padding: 1rem;
+        border: 0.1rem solid var(--secondary-color);
+    }
+    .box__letter {
+        text-align: center;
+        width: 3.1rem;
+        padding: 1rem;
+        background: var(--secondary-color);
+        border: 0.1rem solid var(--neon-color);
+    }
+}
+.ui-state-default {
 }
